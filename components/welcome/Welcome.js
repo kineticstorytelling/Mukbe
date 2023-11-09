@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <View>
         <Text>
-          View   
+          Welcome to Muk-Jeh!   
         </Text>
     </View>
   )
