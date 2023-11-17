@@ -6,7 +6,7 @@ interface ButtonProps {
     // onClick?: (event: React.<HTMLButtonElement>) => void;
 }
 
-const Button = (props: Props) => {
+const Button = (props: ButtonProps) => {
   return (
     <div>Button</div>
   )
