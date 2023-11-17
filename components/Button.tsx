@@ -1,18 +1,18 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TouchableOpacity, View, Text, Touchable } from 'react-native';
+import PropTypes from 'prop-types';
 
 
-interface ButtonProps {
-    children:React.ReactNode;
-    className?: string;
-    // onPress?: (event: <HTMLButtonElement>) => void;
-}
 
-const Button = (props: ButtonProps) => {
+const CustomButton = ({children, onPress}) => {
   return (
-    <Button onPress={props} className={props.className} />
-   
-  )
-}
+    <TouchableOpacity onPress={onPress}>
+        <View>
+            <Text>{children}</Text>
+        </View>
+    </TouchableOpacity>
+  );
+};
 
-export default Button
+
+export default CustomButton
