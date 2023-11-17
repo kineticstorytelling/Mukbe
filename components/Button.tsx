@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { View, Text } from 'react-native';
+
 
 interface ButtonProps {
-    // children:React.ReactNode;
+    children:React.ReactNode;
     className?: string;
-    onClick?: (event: React.<HTMLButtonElement>) => void;
+    // onPress?: (event: <HTMLButtonElement>) => void;
 }
 
 const Button = (props: ButtonProps) => {
   return (
-    <button onClick={props.onClick} className={props.className}>
-        
-    </button>
+    <Button onPress={props} className={props.className} />
+   
   )
 }
 
