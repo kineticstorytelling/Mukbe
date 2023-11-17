@@ -3,12 +3,12 @@ import React from 'react'
 interface ButtonProps {
     // children:React.ReactNode;
     className?: string;
-    // onClick?: (event: React.<HTMLButtonElement>) => void;
+    onClick?: (event: React.<HTMLButtonElement>) => void;
 }
 
 const Button = (props: ButtonProps) => {
   return (
-    <div>Button</div>
+    <button onClick={props.onClick}>Button</button>
   )
 }
 
