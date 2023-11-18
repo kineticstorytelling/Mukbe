@@ -14,5 +14,10 @@ const CustomButton = ({children, onPress}) => {
   );
 };
 
+CustomButton.propTypes = {
+    children: PropTypes.node.isRequired,
+    onPress: PropTypes.func.isRequired,
+};
+
 
 export default CustomButton
